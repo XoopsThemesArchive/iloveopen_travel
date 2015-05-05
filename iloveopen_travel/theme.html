@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="XOOPS" />
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_themecss}>" />
+<!-- RMV: added module header -->
+<{$xoops_module_header}>
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+//-->
+</script>
+</head>
+<body>
+  <table width="739" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+      <td><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"			
+		codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0"
+					width="739" height="238" align="middle">
+        <param name=movie value="<{$xoops_imageurl}>~travel.swf" />
+        <param name=menu value=false />
+        <param name=quality value=high />
+        <param name=scale value=exactfit />
+        <param name=bgcolor value=#FFFFFF />
+        <embed src="<{$xoops_imageurl}>~travel.swf" menu=false quality=high scale=exactfit bgcolor=#FFFFFF
+				    width="739" height="238" align="middle" type="application/x-shockwave-flash" 
+					pluginspage="http://www.macromedia.com/go/getflashplayer"></embed>
+      </object></td>
+    </tr>
+  </table>
+<table width="739" align="center" cellspacing="0" bgcolor="#ffffff" style="border: 1px solid rgb(192,192,192)">
+    <tr valign="top">
+      <td id="leftcolumn">
+        <!-- Start left blocks loop -->
+        <{foreach item=block from=$xoops_lblocks}>
+          <{$block.content}>
+        <{/foreach}>
+        <!-- End left blocks loop -->
+
+      </td>
+
+      <td id="centercolumn">
+
+        <!-- Display center blocks if any -->
+        <{if $xoops_showcblock == 1}>
+
+        <table cellspacing="0">
+          <tr>
+            <td colspan="2" valign="top" id="centerCcolumn">
+
+            <!-- Start center-center blocks loop -->
+            <{foreach item=block from=$xoops_ccblocks}>
+              <{$block.content}>
+            <{/foreach}>
+            <!-- End center-center blocks loop -->
+
+            </td>
+          </tr>
+          <tr>
+            <td valign="top" id="centerLcolumn">
+
+            <!-- Start center-left blocks loop -->
+              <{foreach item=block from=$xoops_clblocks}>
+                <{$block.content}>
+              <{/foreach}>
+            <!-- End center-left blocks loop -->
+
+            </td><td valign="top" id="centerRcolumn">
+
+            <!-- Start center-right blocks loop -->
+              <{foreach item=block from=$xoops_crblocks}>
+                <{$block.content}>
+              <{/foreach}>
+            <!-- End center-right blocks loop -->
+
+            </td>
+          </tr>
+        </table>
+
+        <{/if}>
+        <!-- End display center blocks -->
+
+        <div id="content">
+          <{$xoops_contents}>
+        </div>
+      </td>
+
+      <{if $xoops_showrblock == 1}>
+
+      <td id="rightcolumn" align="right">
+        <!-- Start right blocks loop -->
+        <{foreach item=block from=$xoops_rblocks}>
+          <{$block.content}>
+        <{/foreach}>
+        <!-- End right blocks loop -->
+      </td>
+
+      <{/if}>
+
+    </tr>
+</table>
+
+<table width="739" border="0" align="center" cellpadding="0" cellspacing="0" style="border-top: 1px solid rgb(45,43,32); border-bottom: 1px solid rgb(93,105,93)">
+  <tr>
+    <td id="footerbar" width="80%"><p align="center">Copyright: <{$xoops_meta_copyright}> By <{$xoops_sitename}><br>
+       2006-2007 All rights reserved. <small><a href="http://www.iloveopen.com/">xoops theme by iloveopen.com</a></small></td>
+  </tr>
+</table>
+<br>
+  <br>
+</body>
+</html>
